@@ -1,5 +1,9 @@
 # API Key Hunter - Chrome Extension
 
+[![License](https://img.shields.io/github/license/RoninReilly/api-finder-extension)](https://github.com/RoninReilly/api-finder-extension/blob/main/LICENSE)
+[![Issues](https://img.shields.io/github/issues/RoninReilly/api-finder-extension)](https://github.com/RoninReilly/api-finder-extension/issues)
+[![Stars](https://img.shields.io/github/stars/RoninReilly/api-finder-extension?style=social)](https://github.com/RoninReilly/api-finder-extension)
+
 A powerful Chrome extension that monitors network traffic and automatically detects exposed API keys from various AI providers in real-time.
 
 ## 🔍 Features
@@ -48,18 +52,28 @@ A powerful Chrome extension that monitors network traffic and automatically dete
 
 ## 🚀 Installation
 
-1. Download or clone this repository
-2. Open Chrome and navigate to `chrome://extensions/`
-3. Enable "Developer mode" in the top right
-4. Click "Load unpacked" and select the `chrome-extension` folder
-5. The extension will appear in your toolbar
+1.  Download or clone this repository
+2.  Open Chrome and navigate to `chrome://extensions/`
+3.  Enable "Developer mode" in the top right
+4.  Click "Load unpacked" and select the root folder of this project
+5.  The extension will appear in your toolbar
 
 ## 📖 Usage
 
-1. **Automatic Detection**: The extension runs automatically in the background, monitoring all network traffic
-2. **View Results**: Click the extension icon to see found API keys
-3. **Configure Settings**: Right-click the extension icon and select "Options" to customize behavior
-4. **Export Data**: Use the export button to save found keys or settings
+1.  **Automatic Detection**: The extension runs automatically in the background, monitoring all network traffic
+2.  **View Results**: Click the extension icon to see found API keys
+3.  **Configure Settings**: Right-click the extension icon and select "Options" to customize behavior
+4.  **Export Data**: Use the export button to save found keys or settings
+
+## 🛠️ Build
+
+To package the extension for distribution (e.g., for the Chrome Web Store), use the provided build script:
+
+```bash
+./build.sh
+```
+
+This will create a `api_key_hunter.zip` file in the `dist/` directory.
 
 ## ⚙️ Configuration
 
@@ -108,14 +122,17 @@ Each AI provider can be individually enabled or disabled in the settings.
 
 ### File Structure
 ```
-chrome-extension/
-├── manifest.json          # Extension configuration
+.
+├── dist/                  # Packaged extension files
+├── .gitignore             # Files to ignore in git
 ├── background.js          # Main monitoring logic
-├── content.js            # Page content monitoring
-├── injected.js           # Deep page context monitoring
-├── popup.html/css/js     # Extension popup interface
-├── options.html/css/js   # Settings page
-└── README.md            # This file
+├── build.sh               # Build script
+├── content.js             # Page content monitoring
+├── injected.js            # Deep page context monitoring
+├── manifest.json          # Extension configuration
+├── options.html/css/js    # Settings page
+├── popup.html/css/js      # Extension popup interface
+└── README.md              # This file
 ```
 
 ### Key Components
@@ -142,8 +159,11 @@ This project is provided as-is for educational purposes. Please use responsibly.
 ## 🔗 Links
 
 - [Chrome Web Store](#) (Coming soon)
-- [GitHub Repository](https://github.com/yourusername/api-key-hunter)
-- [Issues & Bug Reports](https://github.com/yourusername/api-key-hunter/issues)
+- [GitHub Repository](https://github.com/RoninReilly/api-finder-extension)
+- [Issues & Bug Reports](https://github.com/RoninReilly/api-finder-extension/issues)
+
+## 🔑 Keywords
+`chrome-extension`, `api-key`, `security`, `developer-tools`, `privacy`, `openai`, `gemini`, `claude`, `anthropic`, `groq`, `deepseek`
 
 ---
 
