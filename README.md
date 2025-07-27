@@ -1,8 +1,8 @@
 # API Key Hunter - Chrome Extension
 
-[![License](https://img.shields.io/github/license/RoninReilly/api-finder-extension)](https://github.com/RoninReilly/api-finder-extension/blob/main/LICENSE)
-[![Issues](https://img.shields.io/github/issues/RoninReilly/api-finder-extension)](https://github.com/RoninReilly/api-finder-extension/issues)
-[![Stars](https://img.shields.io/github/stars/RoninReilly/api-finder-extension?style=social)](https://github.com/RoninReilly/api-finder-extension)
+[![License](https://img.shields.io/github/license/RoninReilly/api-key-hunter)](https://github.com/RoninReilly/api-key-hunter/blob/main/LICENSE)
+[![Issues](https://img.shields.io/github/issues/RoninReilly/api-key-hunter)](https://github.com/RoninReilly/api-key-hunter/issues)
+[![Stars](https://img.shields.io/github/stars/RoninReilly/api-key-hunter?style=social)](https://github.com/RoninReilly/api-key-hunter)
 
 A powerful Chrome extension that monitors network traffic and automatically detects exposed API keys from various AI providers in real-time.
 
@@ -159,8 +159,8 @@ This project is provided as-is for educational purposes. Please use responsibly.
 ## 🔗 Links
 
 - [Chrome Web Store](#) (Coming soon)
-- [GitHub Repository](https://github.com/RoninReilly/api-finder-extension)
-- [Issues & Bug Reports](https://github.com/RoninReilly/api-finder-extension/issues)
+- [GitHub Repository](https://github.com/RoninReilly/api-key-hunter)
+- [Issues & Bug Reports](https://github.com/RoninReilly/api-key-hunter/issues)
 
 ## 🔑 Keywords
 `chrome-extension`, `api-key`, `security`, `developer-tools`, `privacy`, `openai`, `gemini`, `claude`, `anthropic`, `groq`, `deepseek`
