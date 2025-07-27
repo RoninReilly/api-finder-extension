@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API Key Hunter</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+
+  <div class="container">
+    <header class="header">
+      <h1>API Key Hunter</h1>
+      <span id="keyCount">0 keys</span>
+    </header>
+
+    <div class="controls">
+      <button id="clearBtn" class="btn btn-danger"><span>🗑️</span>Clear</button>
+      <button id="exportBtn" class="btn"><span>📥</span>Export</button>
+    </div>
+
+    <div class="search-container">
+        <input type="text" id="searchInput" placeholder="Search..." class="search-input">
+    </div>
+
+    <div class="keys-container">
+      <div id="noKeysMessage" class="no-keys">
+        <p>No API keys found yet.</p>
+      </div>
+      <div id="keysList" class="keys-list"></div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="#" id="optionsLink">Settings</a>
+        </div>
+    </footer>
+  </div>
+
+  <!-- Key Details Modal -->
+  <div id="keyModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3 id="modalTitle">Key Details</h3>
+        <button id="closeModal" class="close-btn">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="key-detail">
+          <label>Provider</label>
+          <span id="modalProvider"></span>
+        </div>
+        <div class="key-detail">
+          <label>Domain</label>
+          <span id="modalDomain"></span>
+        </div>
+        <div class="key-detail">
+          <label>Source URL</label>
+          <span id="modalUrl"></span>
+        </div>
+        <div class="key-detail">
+          <label>Source Type</label>
+          <span id="modalSource"></span>
+        </div>
+        <div class="key-detail">
+          <label>Found At</label>
+          <span id="modalTime"></span>
+        </div>
+        <div class="key-detail">
+          <label>API Key</label>
+          <div class="key-container">
+            <span id="modalKey"></span>
+            <button id="copyKeyBtn" title="Copy key">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
